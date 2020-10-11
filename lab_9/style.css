@@ -1,0 +1,148 @@
+body{
+  font-family: 'Yellowtail', cursive;
+  margin: 0 0;
+  font-size: 30px;
+
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+ }
+
+ .glass {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("background.jpg") center no-repeat;
+}
+.glass span {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 40px 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+    text-shadow: 0 0 12px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Tahoma, sans-serif;
+    letter-spacing: 4px;
+    z-index: 1;
+    overflow: hidden;
+}
+.glass span:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    background: url("background.jpg") center no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.sign-wrap-4 {
+    background: #c2000b;
+    text-align: center;
+    padding: 60px 20px;
+}
+.sign-wrap-4 .sign_word {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
+}
+.sign-wrap-4 .sign_word span {
+    animation: neon-4 linear infinite 2s;
+}
+@keyframes neon-4 {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #750007;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #750007;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #750007;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+.blockquote-4 {
+    position: relative;
+    font-size: 40px;
+    margin: 16px 16px 46px 16px;
+    border: 2px solid #337AB7;
+    border-radius:20px;
+    padding: 25px;
+}
+.blockquote-4::after {
+    content:"";
+    position: absolute;
+    border: 2px solid #337AB7;
+    border-radius: 0 50px 0 0;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 2;
+    box-sizing: border-box;
+}
+.blockquote-4::before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #FFF;
+    bottom: -3px;
+    left: 50px;
+    z-index: 1;
+}
+.blockquote-4 cite {
+    position: absolute;
+    bottom: -30px;
+    left: 110px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #337AB7;
+}
+
+p {
+  padding: 1%;
+   font-family: 'Yellowtail',cursive; /* Гарнитура шрифта основного текста */
+   font-size: 90%; /* Размер шрифта */
+  }
+  P:first-letter {
+   font-family: 'Yellowtail'; /* Гарнитура шрифта первой буквы */
+   font-size: 200%; /* Размер шрифта первого символа */
+   color: blue; /* Красный цвет текста */
