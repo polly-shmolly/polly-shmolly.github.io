@@ -1,0 +1,106 @@
+body{
+  font-family: 'Times new roman';
+  margin: 0 0 0 0;
+  font-size: 20px;
+}
+
+*,
+*:before,
+*:after{
+
+ }
+
+ div {
+ background: linear-gradient(to top left, powderblue, pink);
+
+ }
+
+ H1 {
+   padding: 4%;
+     display: inline-block;
+  text-shadow:
+    1px 1px white,
+    2px 2px #777;
+  color: #333;
+  transition: all 1s;
+}
+
+H1:hover {
+  text-shadow:
+    1px 1px white,
+    2px 2px #ffc1d9;
+  color: #ff67a2;
+}
+
+H2 {
+  padding: 2%;
+  text-align: center;
+  display: inline-block;
+  text-shadow:
+    1px 1px 1px white,
+    1px -1px 1px white,
+    -1px 1px 1px white,
+    -1px -1px 1px white;
+  color: #ff67a2;
+  transition: all 1s;
+}
+
+H2:after {
+  content: "";
+  display: block;
+  z-index: -1;
+  width: 100%;
+  margin: auto;
+  border-bottom: 3px solid #ff67a2;
+  bottom: .15em;
+  transition: all 1s;
+}
+
+H2:hover:after {
+  width: 0%;
+  border-bottom-width: 1px;
+}
+
+H3 {
+  overflow: hidden;
+  padding-left: 25%;
+  display: inline-block;
+  text-shadow:
+    0 0 #ff67a2,
+    0 0 #ffc0cb,
+    0 0 skyblue;
+  color: transparent;
+  transition: all 1s;
+}
+
+H3:hover {
+  text-shadow:
+    -400px 0 #ff67a2,
+    400px 0 #ffc0cb,
+    0 0 skyblue;
+  }
+
+  *, *:after {box-sizing: border-box;}
+.shadow-border {
+  width: 400px;
+  margin: 50px auto 0;
+  position: relative;
+}
+ .shadow-border:after {
+  content:"";
+  width: 100%;
+  height: calc(100% - 20px);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 1;
+  border: 5px solid #FF67a2;
+}
+.shadow-border img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  box-shadow: 4px 4px 20px 0 rgba(0,0,0,.25)
+}
