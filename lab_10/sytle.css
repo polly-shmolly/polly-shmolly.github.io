@@ -1,0 +1,83 @@
+html, body, h1 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+	background: rgb(10,10,10);
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)),
+  repeating-linear-gradient(0, transparent,
+  transparent 2px, black 3px, black 3px),
+	url("bg1.jpg");
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+#wrapper {
+	 text-align: center;
+}
+
+.sub {
+	color: #ff6347;
+	letter-spacing: 1em;
+}
+
+
+.glitch {
+	position: relative;
+	color: white;
+	font-size: 4em;
+	letter-spacing: .5em;
+	animation: glitch-skew 1s infinite linear alternate-reverse;
+
+.glitch:before {
+		left: 2px;
+		text-shadow: -3px 0 #ff5330;
+		clip: rect(44px, 450px, 56px, 0);
+		animation: glitch-before 5s infinite linear alternate-reverse;
+	}
+
+.glitch:after {
+		left: -2px;
+		text-shadow: -3px 0 #009cb8, 2px 2px #ff5330;
+		animation: glitch-after 1s infinite linear alternate-reverse;
+	}
+
+@keyframes glitch-before {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+@keyframes glitch-after {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
