@@ -1,0 +1,101 @@
+body{
+font-family: "Trebuchet MS", "Lucida Sans";
+background-color: #DDD7D7;
+background-size: 50px 50px;
+background-image:
+linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent),
+linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent),
+linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent),
+linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
+}
+
+.header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fdfcfb;
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.nav{
+  display: flex;
+  text-align: center;
+font-family: "Trebuchet MS", "Lucida Sans";
+  font-size: 20px;
+  top: 5px;
+}
+
+.nav__link{
+  vertical-align: top;
+  margin-left: 50px;
+
+  color: #333;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.nav__link:hover{
+  color:red;
+}
+
+.border {
+  padding: 4%;
+  margin: 5%;
+list-style: none;
+padding: 0;
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 7px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 10px solid red;
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 20px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+.border li:nth-child(1){border-color: #fdfcfb;}
+.border li:nth-child(2){border-color: #fff;}
+.border li:nth-child(3){border-color: #fff;}
+.border li:nth-child(4){border-color: #fff;}
+.border li:nth-child(5){border-color: #fff;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid red;}
+.border li:nth-child(2):hover {border-right: 10px solid red;}
+.border li:nth-child(3):hover {border-right: 10px solid red;}
+.border li:nth-child(4):hover {border-right: 10px solid red;}
+.border li:nth-child(5):hover {border-right: 10px solid red;}
+
+.hovergallery img{
+  align-content: center;
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+-o-transform:scale(1.1); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+}
