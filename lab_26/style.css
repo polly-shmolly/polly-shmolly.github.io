@@ -1,0 +1,197 @@
+body {
+  text-align: center;
+  color: pink;
+  margin-top: 50px;
+  font-size: 42px;
+  font-family: Roboto;
+}
+
+button {
+  background-color: #ff3295;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.table {
+  background: black;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid pink;
+}
+
+.box {
+  width:60px;
+  height:60px;
+  background-color: black;
+  float: left;
+  color: white;
+  font-size: 0;
+  transition: opacity 2s;
+}
+
+.bigtable {
+  width: 360px;
+  height: 360px;
+}
+
+.midtable {
+  width: 300px;
+  height: 300px;
+}
+
+.smalltable {
+  width: 240px;
+  height: 240px;
+}
+
+.blank {
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.columnone {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  margin-left: 100px;
+}
+
+.columntwo {
+  width: 200px;
+  height: 400px;
+  float: left;
+  padding-top: 0px;
+}
+
+.balloons {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://i.pinimg.com/originals/9f/15/df/9f15df9782d437f76c6748860d404f46.jpg");
+}
+
+.book {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://lh3.googleusercontent.com/proxy/MIGXgerLoZrdl7XgLKbRx3Q5Jj3d3_AFUusY92KWMNKYU_8q78SzStvqg6tXi20-E44vv0LY1qcorGJy27exlcp0nHFLdxDNVXWjPDhmvWd5jDe6QKMkkz_JgqOXiPwJsui-zbn-vzarQpYv_GH_6WqcuJmXruED9cItxfQ1GXS3D3o8ocoqmr4FpJft");;
+}
+
+.burger {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://sun9-11.userapi.com/impf/LRkRcK2WKRvJLv_1RR0cTZf0WqCOdC5KOc1glw/tgY5KGV-NOA.jpg?size=200x0&quality=90&crop=0,0,545,604&sign=b79609c8a3806f6c813f060defe990a7&ava=1");;
+}
+
+.bus {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://i.pinimg.com/originals/7c/d5/b5/7cd5b57cdcb3a3adb8100ea569d2219b.jpg");;
+}
+
+.car {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://i.pinimg.com/originals/ac/77/e0/ac77e0d3ae3f780b02f2ddc4ee6038dd.jpg");;
+}
+
+
+.crocodile {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://magazin-detskij.ru/images/feature_variant/2/My-Little-Pony-equestria-girls-logo.png");;
+}
+
+.dragon {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://upload.wikimedia.org/wikipedia/ru/6/69/My_Little_Pony_Friendship_Is_Magic_mobile_game_cover_art.jpg");;
+}
+
+.earth {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://ck.ot7.ru/uploads/2/1/3/Dinozavrik-iz-my-little-pony_21306.jpg");;
+}
+
+.penguin {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/28/84/26/288426ee-cb04-9a91-8790-75b996e1c512/source/512x512bb.jpg");;
+}
+
+.penguin3 {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://static.wikia.nocookie.net/mlp/images/a/ab/Grubber_ID_MLPTM.png/revision/latest?cb=20171015000536&path-prefix=ru");;
+}
+
+.penguinflag {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://i.mycdn.me/i?r=AEF0PjOBfKSCKs0AX-NHBglGjkXpxxvxdPHY_4MyIXZT056k4yxqpaom4VRIsSsN3KuPO0i1bS25atCdys1_w0Ps&i=1&fn=external_8");;
+}
+
+.policeman {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://i.pinimg.com/originals/33/37/55/333755009aa46d8f33acb5e611816716.jpg");;
+}
+
+.rubikscube {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://pm1.narvii.com/6817/af9bd66e7a0df4b89feaed8b1eca0d622c26849ev2_00.jpg");;
+}
+
+.smiley {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://pp.vk.me/c616327/v616327931/86ea/eb0QXqeC0lI.jpg");;
+}
+
+.tomato {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://detskoevremya.org/x/c_50/11/poni-elxza.jpg");;
+}
+
+.trompet {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://www.images.lesyadraw.ru/2016/01/kak_narisovat_poni_koloritiku1.jpg");;
+}
+
+.umbrella {
+  background-size: cover;
+  background-color: white;
+  background-image: url("https://slovnet.ru/wp-content/uploads/2019/09/2-19.png");;
+}
+
+.windmill {
+  background-color: white;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/05/e0/6c/05e06c388f039692ea852f22471c0662.png");;
+}
+
+
+
+.hidden {
+  opacity: 100;
+  background-color: black;
+  background-image: url("https://glazki-zakryvai.ru/wa-data/public/shop/brands/169/169.jpg");;
+}
